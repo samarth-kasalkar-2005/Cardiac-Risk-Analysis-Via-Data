@@ -47,6 +47,9 @@ Cardiac-Risk-Analysis-Via-Data/
 ├── backend/
 │   └── app.py
 │
+├── dataset/
+│   └── heart.csv
+│
 ├── frontend/
 │   ├── index.html
 │   ├── style.css
@@ -54,13 +57,11 @@ Cardiac-Risk-Analysis-Via-Data/
 │
 ├── model/
 │   ├── heart_model.pkl
-│   └── scaler.pkl
+│   ├── scaler.pkl
+|   └── train_model.ipynb
 │
-├── dataset/
-│   └── heart.csv
-│
-├── requirements.txt
-└── README.md
+├── README.md
+└── requirements.txt
 ```
 
 ---

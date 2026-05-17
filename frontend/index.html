@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Cardiac Disease Detection</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <div class="container">
+        <h1>Cardiac Disease Detection</h1>
+
+        <form id="predictionForm">
+
+            <input type="number" id="age" placeholder="Age" required>
+
+            <select id="sex">
+                <option value="1">Male</option>
+                <option value="0">Female</option>
+            </select>
+
+            <select id="cp">
+                <option value="0">Typical Angina</option>
+                <option value="1">Atypical Angina</option>
+                <option value="2">Non-Anginal Pain</option>
+                <option value="3">Asymptomatic</option>
+            </select>
+
+            <input type="number" id="trestbps" placeholder="Resting Blood Pressure" required>
+            <input type="number" id="chol" placeholder="Cholesterol" required>
+
+            <select id="fbs">
+                <option value="1">Fasting Blood Sugar > 120 (Yes)</option>
+                <option value="0">Fasting Blood Sugar <= 120 (No)</option>
+            </select>
+
+            <select id="restecg">
+                <option value="0">Normal</option>
+                <option value="1">ST-T Abnormality</option>
+                <option value="2">Left Ventricular Hypertrophy</option>
+            </select>
+
+            <input type="number" id="thalach" placeholder="Max Heart Rate" required>
+
+            <select id="exang">
+                <option value="1">Exercise Induced Angina (Yes)</option>
+                <option value="0">Exercise Induced Angina (No)</option>
+            </select>
+
+            <input type="number" step="any" id="oldpeak" placeholder="Oldpeak" required>
+
+            <select id="slope">
+                <option value="0">Upsloping</option>
+                <option value="1">Flat</option>
+                <option value="2">Downsloping</option>
+            </select>
+
+            <input type="number" id="ca" placeholder="Number of Major Vessels (0-3)" required>
+
+            <select id="thal">
+                <option value="0">Normal</option>
+                <option value="1">Fixed Defect</option>
+                <option value="2">Reversible Defect</option>
+                <option value="3">Unknown</option>
+            </select>
+
+            <button type="submit">Predict</button>
+        </form>
+
+<div id="resultCard" class="result-card">
+    <h2 id="result"></h2>
+    <p id="probability"></p>
+</div>
+
+        <h2 id="result"></h2>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
